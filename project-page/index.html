@@ -45,12 +45,11 @@
 <body>
 
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+<section class="hero"> <div class="hero-body"> <div class="wide-only-title"> <h1 class="title is-1 publication-title has-text-centered">ROVER: Robust Loop Closure Verification with Trajectory Prior in Repetitive Environments</h1> </div> 
+  <div class="container is-max-desktop">
+
+ <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ROVER: Robust Loop Closure Verification with Trajectory Prior in Repetitive Environments</h1>
             <span class="link-block">
                     <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -64,11 +63,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- Teaser video-->
+  </div> </div> </section>
  
 <section class="hero teaser">
   <style>
@@ -141,67 +137,17 @@
   </div>
 </section>
 
-
-<!-- <section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">TL;DR</h2>
-        <div class="content has-text-justified">
-          <p>
-            In this letter, we propose ROVER, a loop closure verification method that leverages the historical trajectory as a prior constraint to reject false loops in challenging repetitive environments. For each loop candidate, it is first used to estimate the robot trajectory with pose-graph optimization. This trajectory is then submitted to a scoring scheme that assesses its compliance with the trajectory without the loop, which we consider to be the trajectory prior, to determine if the loop candidate should be accepted.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-4">Demos</h2>
-        <div class="content has-text-justified">
-          <ol>
-            <li>
-              <strong>Fair and accessible geometric verification evaluation.</strong>
-              We open-source an out-of-box framework with a modular design as illustrated in Fig. 3, allowing for evaluating newly proposed methods on the common ground and extending to more diverse datasets.
-            </li>
-            <li>
-              <strong>A systematic analysis of geometric verification.</strong> By employing the proposed benchmark, we point out possible future directions (e.g., training feature extractor and matcher with conditional variation data) through extensive experiments.
-            </li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Visual loop closure detection is an important module in visual simultaneous localization and mapping (SLAM), which associates current camera observation with previously visited places. Loop closures correct drifts in trajectory estimation to build a globally consistent map. However, a false loop closure can be fatal, so verification is required as an additional step to ensure robustness by rejecting the false positive loops. Geometric verification has been a well-acknowledged solution that leverages spatial clues provided by local feature matching to find true positives. Existing feature matching methods focus on homography and pose estimation in long-term visual localization, lacking references for geometric verification. To fill the gap, this paper proposes a unified benchmark targeting geometric verification of loop closure detection under long-term conditional variations. Furthermore, we evaluate six representative local feature matching methods (handcrafted and learning-based) under the benchmark, with in-depth analysis for limitations and future directions.          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Loop Closure Detection</h2>
         <div class="content has-text-justified">
-        <img style="display: block; margin-left: auto; margin-right: auto; width: 70%" src="static/images/lcd-pipelinev1.2.png" alt="MY ALT TEXT" />
         <p>
           Two-stage Loop Closure Detection Pipeline. (i) Retrieval stage adopts image retrieval techniques to match historical keyframes. (ii) Verification stage serves as a binary classifier that rejects the falsely detected loop candidates.
         </p>
+      <img style="display: block; margin-left: auto; margin-right: auto; width: 70%" src="static/images/lcd-pipelinev1.2.png" alt="MY ALT TEXT" />
+
       </div>
 
       <h2 class="title is-3">Trajectory Prior Constraint</h2>
@@ -252,90 +198,5 @@
     </div>
     </div>
   </section>
-
-<!-- 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <img src="static/images/exp_table.png" alt="MY ALT TEXT" />
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="section hero is-small">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="content has-text-justified">
-        <img style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="static/images/pr_curve_day.png" alt="MY ALT TEXT" />
-        <figcaption>Precision-recall curve</strong> of the “Day” sequence. The marker annotates the maximum recall @100 precision (MR). The area under the curve (AUC) represents average precision (AP).</p>
-      </div>
-        <h2 class="title is-4">Feature Matching Examples</h2>
-        <div class="content has-text-justified">
-          In the figures below, we visualize LoFTR matches with vanilla RANSAC. The inliers (green lines) and outliers (red lines) are highlighted. The number of inliers of (c) and (d) are counter-intuitive because RANSAC fails when false matches are dominant (more detailed analysis are provided in Sec. IV-D of the paper).
-        </div>
-          <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="static/images/matching-0.jpg" alt="MY ALT TEXT" />
-        <figcaption> (a) Negative pair in “Nordland” with inliers: 9
-        </figcaption>
-      </figure>
-      <figure>
-          <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="static/images/matching-1.jpg" alt="MY ALT TEXT" />
-        <figcaption> (b) Positive pair in “Nordland” with inliers: 37</figcaption>
-      </figure>
-      <figure>
-          <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="static/images/robotcar-0.jpg" alt="MY ALT TEXT" />
-          <figcaption> (c) Negative pair in “Day” with inliers: 45 </figcaption>
-      </figure>
-      <figure>
-        <img style="display: block; margin-left: auto; margin-right: auto; width: 80%" src="static/images/robotcar-1.jpg" alt="MY ALT TEXT" />
-          <figcaption> (d) Positive pair in “Day” with inliers: 41 </figcaption>
-      </figure>
-        </div>  
-      </div>
-     </div>
-    </div>
-  </div>
-</section> -->
-
-
-<!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
-        @article{yu2024gv,
-        title={GV-Bench: Benchmarking Local Feature Matching for Geometric Verification of Long-term Loop Closure Detection},
-        author={Yu, Jingwen and Ye, Hanjing and Jiao, Jianhao and Tan, Ping and Zhang, Hong},
-        journal={arXiv preprint arXiv:2407.11736},
-        year={2024}}
-    </code></pre>
-    </div>
-</section> -->
-<!--End BibTex citation -->
-
-
-<!-- <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
   </body>
   </html>

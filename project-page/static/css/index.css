@@ -2,6 +2,11 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.wide-only-title {
+max-width: 1400px; /* 想要的宽度 */
+margin: 0 auto 1.5rem;
+padding: 0 1.5rem;
+}
 
 .footer .icon-link {
     font-size: 25px;
