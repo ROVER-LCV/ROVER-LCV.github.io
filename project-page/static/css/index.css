@@ -139,14 +139,14 @@ padding: 0 1.5rem;
 }
 
 .wide-container {
-max-width: 1200px;
+max-width: 1400px;
 margin: 0 auto;
 padding: 0 1.5rem;
 width: 100%;
 }
 
 .wide-video-container {
-max-width: 1000px;   /* 或 1200 / 1400 按需 */
+max-width: 1200px;   /* 或 1200 / 1400 按需 */
 width: 80%;
 margin: 0 auto;
 padding: 0 1.5rem;
@@ -167,7 +167,7 @@ box-shadow: 0 4px 8px rgba(0,0,0,.2);
 }
 
 .video-wrapper.narrow {
-max-width: 800px;   /* 想要的最大宽度，比如 700/800/900 */
+max-width: 1000px;   /* 想要的最大宽度，比如 700/800/900 */
 margin: 0 auto;
 }
 .video-wrapper.narrow video {
