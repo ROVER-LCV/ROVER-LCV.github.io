@@ -65,7 +65,9 @@
       </div>
 
   </div> </div> </section>
- 
+
+
+
 <!-- <section class="hero teaser">
   <style>
     /* Style for the section */
@@ -141,6 +143,26 @@
   </div>
 </section>
 
+
+<section class="section hero is-small">
+  <div class="wide-container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">A typical repetitive scene</h2>
+        <div class="content has-text-justified">
+          <p>
+            The following figure illustrates a typical repetitive environment where existing SLAM algorithms struggle with appearance-based loop closure verification.
+            The green line represents the trajectory of the moving robot. Different floors of the building exhibit highly similar appearances, making it challenging for traditional SLAM systems to distinguish between different locations based solely on appearance features. As a result, these systems often mistakenly identify false loops, leading to significant localization errors and map distortions.
+          </p>
+          <figure>
+          <img style="display: block; margin-left: auto; margin-right: auto; width: 70%;" src="static/images/escalator_repetitive_env_illustrative.png" alt="MY ALT TEXT" />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section hero is-small">
   <div class="wide-container">
     <div class="columns is-centered has-text-centered">
@@ -150,7 +172,7 @@
         <p>
           Two-stage Loop Closure Detection Pipeline. (i) Retrieval stage adopts image retrieval techniques to match historical keyframes. (ii) Verification stage serves as a binary classifier that rejects the falsely detected loop candidates.
         </p>
-      <img style="display: block; margin-left: auto; margin-right: auto; width: 70%" src="static/images/lcd-pipelinev1.2.png" alt="MY ALT TEXT" />
+      <img style="display: block; margin-left: auto; margin-right: auto; width: 60%" src="static/images/lcd-pipelinev1.2.png" alt="MY ALT TEXT" />
 
       </div>
 
@@ -159,7 +181,7 @@
           <p> 
           Our work proposes to examine the changes in the robot’s trajectory before and after incorporating a loop constraint into PGO. Intuitively, adding a true loop to PGO, the change of the robot trajectory would be continuous and graceful; while adding a false loop, the change would be chaotic and catastrophic.
           </p>
-        <img style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="static/images/method-v1.5.png" alt="MY ALT TEXT" />
+        <img style="display: block; margin-left: auto; margin-right: auto; width: 45%" src="static/images/method-v1.5.png" alt="MY ALT TEXT" />
       </div>
 
       <h2 class="title is-3">System Pipeline</h2>
